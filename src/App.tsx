@@ -90,11 +90,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#f5f5f0] text-stone-900">
-      <header className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-[#5A5A40] text-white">
+      <header className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-[#3A4124] text-white">
         <img 
-          src="https://picsum.photos/seed/pizza-oven/1920/1080?blur=2" 
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
-          alt="Pizza Oven"
+          src="header.jpg" 
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          alt="Quatiers Pizza Ofe"
+          onError={(e) => {
+            // Fallback if header.jpg isn't found
+            (e.target as HTMLImageElement).src = "https://picsum.photos/seed/community-oven/1920/1080";
+          }}
           referrerPolicy="no-referrer"
         />
         <div className="relative z-10 text-center px-4">

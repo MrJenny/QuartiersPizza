@@ -14,9 +14,9 @@
     
     <style>
         :root {
-            --color-brand-olive: #5A5A40;
-            --color-brand-cream: #f5f5f0;
-            --color-brand-terracotta: #b35a38;
+            --color-brand-olive: #3A4124;
+            --color-brand-cream: #E8EAE3;
+            --color-brand-terracotta: #8B3A2B;
         }
         body {
             font-family: sans-serif;
@@ -138,7 +138,7 @@
             return (
                 <div className="min-h-screen">
                     <header className="relative h-[40vh] flex items-center justify-center overflow-hidden bg-brand-olive text-white">
-                        <img src="https://picsum.photos/seed/pizza-oven/1920/1080?blur=2" className="absolute inset-0 w-full h-full object-cover opacity-40" />
+                        <img src="header.jpg" className="absolute inset-0 w-full h-full object-cover opacity-60" onerror="this.src='https://picsum.photos/seed/community-oven/1920/1080'" />
                         <div className="relative z-10 text-center px-4">
                             <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-2">Quatiers-Pizza-Ofe</h1>
                             <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">Zämecho, bache und teile. Reservier diis Plätzli a üsem Quatiers-Holzofe.</p>
